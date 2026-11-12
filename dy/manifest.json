@@ -1,0 +1,18 @@
+{
+  "name": "Raja Jewellers Jabalpur",
+  "short_name": "Raja Jewellers",
+  "description": "Raja Jewellers & Gems - Hallmarked Gold, Diamond, Silver & Certified Gemstones in Gwarighat, Jabalpur.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#140505",
+  "theme_color": "#D4AF37",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "media/favicon.svg",
+      "sizes": "64x64 128x128 256x256",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

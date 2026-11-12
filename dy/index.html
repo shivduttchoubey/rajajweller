@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Raja Jewellers | राजा ज्वेलर्स - Hallmarked Gold, Diamonds & Gemstones Jabalpur</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Raja Jewellers (राजा ज्वेलर्स), Gwarighat, Jabalpur. 100% BIS 916 Hallmarked Gold, Certified Diamonds, Pure Silver & Astrological Gemstones. Visit our showroom near Mayur Kala Mandir.">
+  <meta name="keywords" content="Raja Jewellers, Raja Gems and Jewellers, Gwarighat Jabalpur, Gold Jewellery Jabalpur, BIS Hallmarked 916, Diamond jewellery, Gemstones Jabalpur">
+  <meta name="author" content="Raja Jewellers, Jabalpur">
+  
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:title" content="Raja Jewellers - The Royal Touch of Purity | Gwarighat, Jabalpur">
+  <meta property="og:description" content="Exquisite 22K/18K Gold, Certified Diamonds, Natural Gemstones & Bridal Trousseau at Raja Jewellers, Gwarighat Main Road, Jabalpur.">
+  <meta property="og:image" content="media/hero-bg.jpg">
+  <meta property="og:type" content="business.business">
+
+  <!-- Mobile & PWA Config -->
+  <meta name="theme-color" content="#120404">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="media/favicon.svg">
+
+  <!-- Google Fonts: Luxury Serif & Modern Sans & Hindi Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Montserrat:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700;800&family=Yatra+One&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-lang="en">
+
+  <!-- ================= TOP TICKER & LIVE GOLD RATES ================= -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="live-rate-ticker">
+        <span class="ticker-badge"><i class="fa-solid fa-bolt pulse-icon"></i> <span data-i18n="liveRatesLabel">Jabalpur Market Live Rates</span>:</span>
+        <div class="ticker-items" id="tickerItems">
+          <span class="ticker-item"><strong>Gold 24K (999):</strong> ₹<span id="rate24k">78,450</span>/10g <i class="fa-solid fa-arrow-trend-up trend-up"></i></span>
+          <span class="ticker-divider">•</span>
+          <span class="ticker-item"><strong>Gold 22K (916):</strong> ₹<span id="rate22k">71,920</span>/10g <i class="fa-solid fa-arrow-trend-up trend-up"></i></span>
+          <span class="ticker-divider">•</span>
+          <span class="ticker-item"><strong>Gold 18K (750):</strong> ₹<span id="rate18k">58,840</span>/10g</span>
+          <span class="ticker-divider">•</span>
+          <span class="ticker-item"><strong>Silver (999):</strong> ₹<span id="rateSilver">93,500</span>/kg <i class="fa-solid fa-arrow-trend-up trend-up"></i></span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:+919993918013" class="top-contact-link"><i class="fa-solid fa-phone"></i> +91 99939 18013</a>
+        <div class="lang-switch-group">
+          <button class="lang-btn active" id="btnLangEn" onclick="switchLanguage('en')">EN</button>
+          <span class="lang-separator">|</span>
+          <button class="lang-btn" id="btnLangHi" onclick="switchLanguage('hi')">हिंदी</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER & NAVIGATION ================= -->
+  <header class="main-header" id="mainHeader">
+    <div class="container header-container">
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+
+      <!-- Royal Logo -->
+      <a href="#home" class="brand-logo" aria-label="Raja Jewellers Homepage">
+        <img src="media/logo.svg" alt="Raja Jewellers Logo - Jabalpur" class="logo-img">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-i18n="navHome">Home</a></li>
+          <li><a href="#collections" class="nav-link" data-i18n="navCollections">Collections</a></li>
+          <li><a href="#gold-rates" class="nav-link" data-i18n="navRates">Live Rates & Calc</a></li>
+          <li><a href="#custom-jewels" class="nav-link" data-i18n="navCustom">Custom Karigari</a></li>
+          <li><a href="#vip-appointment" class="nav-link" data-i18n="navAppointment">Book Visit</a></li>
+          <li><a href="#reviews" class="nav-link" data-i18n="navReviews">Reviews</a></li>
+          <li><a href="#location" class="nav-link" data-i18n="navLocation">Location</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <a href="https://wa.me/919993918013?text=Namaste%20Raja%20Jewellers,%20I%20would%20like%20to%20inquire%20about%20your%20jewellery%20collection." target="_blank" rel="noopener" class="btn-whatsapp-pill" aria-label="Chat on WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span class="desktop-only" data-i18n="whatsappUs">WhatsApp</span>
+        </a>
+        <a href="#vip-appointment" class="btn-royal btn-sm desktop-only">
+          <i class="fa-solid fa-calendar-check"></i> <span data-i18n="btnBookShowroom">Book VIP Visit</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MOBILE NAVIGATION DRAWER ================= -->
+  <div class="mobile-drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <img src="media/logo.svg" alt="Raja Jewellers" class="drawer-logo">
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Language Switcher -->
+    <div class="drawer-lang-selector">
+      <span data-i18n="selectLanguage">Choose Language:</span>
+      <div class="drawer-lang-pills">
+        <button class="drawer-lang-pill active" onclick="switchLanguage('en')">English</button>
+        <button class="drawer-lang-pill" onclick="switchLanguage('hi')">हिंदी (Hindi)</button>
+      </div>
+    </div>
+
+    <ul class="drawer-nav-list">
+      <li><a href="#home" class="drawer-link" onclick="closeDrawer()"><i class="fa-solid fa-house-chimney"></i> <span data-i18n="navHome">Home</span></a></li>
+      <li><a href="#collections" class="drawer-link" onclick="closeDrawer()"><i class="fa-solid fa-gem"></i> <span data-i18n="navCollections">Collections</span></a></li>
+      <li><a href="#gold-rates" class="drawer-link" onclick="closeDrawer()"><i class="fa-solid fa-calculator"></i> <span data-i18n="navRates">Live Rates & Calc</span></a></li>
+      <li><a href="#custom-jewels" class="drawer-link" onclick="closeDrawer()"><i class="fa-solid fa-ring"></i> <span data-i18n="navCustom">Custom Karigari</span></a></li>
+      <li><a href="#vip-appointment" class="drawer-link" onclick="closeDrawer()"><i class="fa-solid fa-calendar-check"></i> <span data-i18n="navAppointment">Book Visit</span></a></li>
+      <li><a href="#reviews" class="drawer-link" onclick="closeDrawer()"><i class="fa-solid fa-star"></i> <span data-i18n="navReviews">Reviews</span></a></li>
+      <li><a href="#location" class="drawer-link" onclick="closeDrawer()"><i class="fa-solid fa-location-dot"></i> <span data-i18n="navLocation">Location & Map</span></a></li>
+    </ul>
+
+    <div class="drawer-contact-card">
+      <h4><i class="fa-solid fa-store"></i> <span data-i18n="storeQuickInfo">Store Contact</span></h4>
+      <p><i class="fa-solid fa-map-pin"></i> Near Mayur Kala Mandir, Old P.P. Colony, Gwarighat, Jabalpur (M.P.) - 482008</p>
+      <p><i class="fa-solid fa-clock"></i> <span data-i18n="timingsText">Mon - Sun: 11:00 AM - 9:00 PM</span></p>
+      <div class="drawer-action-btns">
+        <a href="tel:+919993918013" class="btn-royal btn-sm"><i class="fa-solid fa-phone"></i> <span data-i18n="callNow">Call Now</span></a>
+        <a href="https://wa.me/919993918013" target="_blank" rel="noopener" class="btn-whatsapp-pill"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero-section" id="home">
+    <div class="hero-backdrop" style="background-image: url('media/hero-bg.jpg');"></div>
+    <div class="hero-overlay"></div>
+    
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-crown"></i>
+          <span data-i18n="heroBadge">TRUSTED JEWELLERS IN GWARIGHAT SINCE 2008</span>
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="gold-gradient" data-i18n="heroTitleGold">Timeless Elegance,</span><br>
+          <span data-i18n="heroTitleRoyal">Pure Royal Heritage.</span>
+        </h1>
+        
+        <p class="hero-subtitle" data-i18n="heroSubtitle">
+          Discover certified 22KT & 18KT BIS Hallmarked gold, radiant solitaire diamonds, pure silver ornaments, and natural astrological gemstones crafted with authentic karigari.
+        </p>
+        
+        <div class="hero-cta-group">
+          <a href="#collections" class="btn-royal btn-lg">
+            <i class="fa-solid fa-sparkles"></i> <span data-i18n="exploreCollections">Explore Collections</span>
+          </a>
+          <a href="#vip-appointment" class="btn-outline-gold btn-lg">
+            <i class="fa-solid fa-calendar-day"></i> <span data-i18n="bookVIPConsultation">Book Showroom Visit</span>
+          </a>
+        </div>
+
+        <!-- Trust Badges Under Hero -->
+        <div class="hero-trust-row">
+          <div class="trust-pill">
+            <i class="fa-solid fa-certificate"></i>
+            <div>
+              <strong>100% BIS Hallmarked</strong>
+              <small>HUID 916 & 750 Purity</small>
+            </div>
+          </div>
+          <div class="trust-pill">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <div>
+              <strong>Transparent Pricing</strong>
+              <small>Lowest Making Charges</small>
+            </div>
+          </div>
+          <div class="trust-pill">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <strong>Certified Gemstones</strong>
+              <small>Lab Tested & Natural</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Showcase Highlight Card -->
+      <div class="hero-card-column">
+        <div class="hero-glass-card">
+          <div class="card-ribbon" data-i18n="bridalSpecial">Bridal Special</div>
+          <img src="media/bridal-trousseau.jpg" alt="Raja Jewellers Bridal Collection" class="hero-card-img">
+          <div class="card-caption">
+            <h3 data-i18n="royalBridalSet">The Royal Heritage Bridal Set</h3>
+            <p data-i18n="bridalSetDesc">Exquisite 22K Antique Polki & Kundan necklace with matching Jhumkas and Maang Tikka.</p>
+            <div class="card-bottom">
+              <span class="tag-gold"><i class="fa-solid fa-gem"></i> 22KT Gold Hallmarked</span>
+              <a href="#vip-appointment" class="text-link" data-i18n="inquireNow">Inquire Now &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRUST & HALLMARK HIGHLIGHT BAR ================= -->
+  <section class="trust-bar-section">
+    <div class="container trust-bar-grid">
+      <div class="trust-item">
+        <img src="media/bis-hallmark.svg" alt="BIS Hallmark 916 Guaranteed" class="trust-icon-img">
+        <div class="trust-text">
+          <h4 data-i18n="trustBisTitle">Govt. BIS 916 Hallmarked</h4>
+          <p data-i18n="trustBisDesc">Every gold piece features verified HUID laser hallmark stamps for 100% purity assurance.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <img src="media/certified-seal.svg" alt="100% Certified Gemstones" class="trust-icon-img">
+        <div class="trust-text">
+          <h4 data-i18n="trustGemsTitle">Certified Astrological Gems</h4>
+          <p data-i18n="trustGemsDesc">Untreated, natural Manik, Panna, Pukhraj, and Neelam verified with authentic lab certificates.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-symbol-box"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="trust-text">
+          <h4 data-i18n="trustExchangeTitle">Lifetime Buyback & Exchange</h4>
+          <p data-i18n="trustExchangeDesc">Best exchange value on gold and diamond jewellery with complete transparency in weighing.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-symbol-box"><i class="fa-solid fa-hammer"></i></div>
+        <div class="trust-text">
+          <h4 data-i18n="trustKarigarTitle">Custom Karigari Job Works</h4>
+          <p data-i18n="trustKarigarDesc">Master goldsmiths on-site to bring your custom designs, resizing, and repair needs to life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= JEWELLERY CATEGORIES ================= -->
+  <section class="section categories-section" id="categories">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading" data-i18n="categoriesSub">Royal Craftsmanship</span>
+        <h2 class="section-title" data-i18n="categoriesTitle">Explore By Category</h2>
+        <div class="gold-divider"><span>♦</span></div>
+        <p class="section-desc" data-i18n="categoriesDesc">From grand wedding ceremonies to subtle daily luxury, discover creations designed for every auspicious milestone.</p>
+      </div>
+
+      <div class="categories-grid">
+        <!-- 1. Bridal Trousseau -->
+        <div class="category-card" onclick="filterCatalog('bridal')">
+          <div class="category-img-box">
+            <img src="media/bridal-model.jpg" alt="Bridal Jewellery Collection Raja Jewellers">
+            <div class="category-overlay">
+              <span class="btn-category-view" data-i18n="viewCollection">View Collection <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="category-info">
+            <h3 data-i18n="catBridal">Bridal Trousseau</h3>
+            <p data-i18n="catBridalDesc">Complete wedding sets, rani haars, and chokers</p>
+          </div>
+        </div>
+
+        <!-- 2. Gold Necklaces -->
+        <div class="category-card" onclick="filterCatalog('gold')">
+          <div class="category-img-box">
+            <img src="media/gold-necklace.jpg" alt="Gold Necklaces Raja Jewellers Jabalpur">
+            <div class="category-overlay">
+              <span class="btn-category-view" data-i18n="viewCollection">View Collection <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="category-info">
+            <h3 data-i18n="catGold">Gold Jewellery</h3>
+            <p data-i18n="catGoldDesc">22K Chains, mangalsutras, and necklaces</p>
+          </div>
+        </div>
+
+        <!-- 3. Diamond Ornaments -->
+        <div class="category-card" onclick="filterCatalog('diamond')">
+          <div class="category-img-box">
+            <img src="media/diamond-ring.jpg" alt="Certified Diamond Rings & Pendants">
+            <div class="category-overlay">
+              <span class="btn-category-view" data-i18n="viewCollection">View Collection <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="category-info">
+            <h3 data-i18n="catDiamond">Diamond Jewels</h3>
+            <p data-i18n="catDiamondDesc">Solitaires, cocktail rings, and pendants</p>
+          </div>
+        </div>
+
+        <!-- 4. Bangles & Kadas -->
+        <div class="category-card" onclick="filterCatalog('gold')">
+          <div class="category-img-box">
+            <img src="media/gold-bangles.jpg" alt="Gold Bangles and Kadas">
+            <div class="category-overlay">
+              <span class="btn-category-view" data-i18n="viewCollection">View Collection <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="category-info">
+            <h3 data-i18n="catBangles">Bangles & Kadas</h3>
+            <p data-i18n="catBanglesDesc">Traditional patla, churi, and modern kadas</p>
+          </div>
+        </div>
+
+        <!-- 5. Jhumkas & Earrings -->
+        <div class="category-card" onclick="filterCatalog('gold')">
+          <div class="category-img-box">
+            <img src="media/earrings-jhumka.jpg" alt="Jhumkas and Chandelier Earrings">
+            <div class="category-overlay">
+              <span class="btn-category-view" data-i18n="viewCollection">View Collection <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="category-info">
+            <h3 data-i18n="catEarrings">Earrings & Jhumkas</h3>
+            <p data-i18n="catEarringsDesc">Chandbalis, drops, studs, and heavy jhumkas</p>
+          </div>
+        </div>
+
+        <!-- 6. Astrological Gemstones -->
+        <div class="category-card" onclick="filterCatalog('gemstones')">
+          <div class="category-img-box">
+            <img src="media/gemstones-rubies.jpg" alt="Natural Astrological Gemstones Jabalpur">
+            <div class="category-overlay">
+              <span class="btn-category-view" data-i18n="viewCollection">View Collection <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="category-info">
+            <h3 data-i18n="catGems">Natural Gemstones</h3>
+            <p data-i18n="catGemsDesc">Certified Ruby, Emerald, Sapphire & Navratna</p>
+          </div>
+        </div>
+
+        <!-- 7. Pure Silver & Pooja -->
+        <div class="category-card" onclick="filterCatalog('silver')">
+          <div class="category-img-box">
+            <img src="media/silver-pooja.jpg" alt="Silver Pooja Utensils and Idols">
+            <div class="category-overlay">
+              <span class="btn-category-view" data-i18n="viewCollection">View Collection <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="category-info">
+            <h3 data-i18n="catSilver">Pure Silver & Pooja</h3>
+            <p data-i18n="catSilverDesc">Silver thalis, idols, payal, and gift articles</p>
+          </div>
+        </div>
+
+        <!-- 8. Men's Royal Collection -->
+        <div class="category-card" onclick="filterCatalog('gold')">
+          <div class="category-img-box">
+            <img src="media/mens-gold.jpg" alt="Men's Gold Chains and Kadas">
+            <div class="category-overlay">
+              <span class="btn-category-view" data-i18n="viewCollection">View Collection <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+          <div class="category-info">
+            <h3 data-i18n="catMens">Men's Collection</h3>
+            <p data-i18n="catMensDesc">Solid gold chains, bracelets, and rings</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED CATALOG WITH TABS & QUICK-VIEW ================= -->
+  <section class="section catalog-section" id="collections">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading" data-i18n="curatedShowcaseSub">Signature Masterpieces</span>
+        <h2 class="section-title" data-i18n="curatedShowcaseTitle">Featured Showroom Showcase</h2>
+        <div class="gold-divider"><span>♦</span></div>
+        <p class="section-desc" data-i18n="curatedShowcaseDesc">Hand-curated ornaments currently on display at our Gwarighat showroom. Click any piece for purity specifications or WhatsApp inquiry.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="catalog-filter-bar">
+        <button class="filter-btn active" data-filter="all" onclick="filterCatalog('all')" data-i18n="filterAll">All Ornaments</button>
+        <button class="filter-btn" data-filter="bridal" onclick="filterCatalog('bridal')" data-i18n="filterBridal">Bridal Sets</button>
+        <button class="filter-btn" data-filter="gold" onclick="filterCatalog('gold')" data-i18n="filterGold">Gold 22K</button>
+        <button class="filter-btn" data-filter="diamond" onclick="filterCatalog('diamond')" data-i18n="filterDiamond">Diamond</button>
+        <button class="filter-btn" data-filter="gemstones" onclick="filterCatalog('gemstones')" data-i18n="filterGems">Gemstones</button>
+        <button class="filter-btn" data-filter="silver" onclick="filterCatalog('silver')" data-i18n="filterSilver">Silver Articles</button>
+      </div>
+
+      <!-- Catalog Grid -->
+      <div class="catalog-grid" id="catalogGrid">
+        
+        <!-- Product 1 -->
+        <div class="product-card" data-category="bridal" data-purity="22KT BIS Hallmarked" data-title-en="Maharani Royal Kundan Choker Set" data-title-hi="महारानी कुंदन चोकर सेट" data-img="media/antique-choker.jpg" data-desc-en="A masterpiece handcrafted with floral meenakari motifs, uncut polki diamonds, and cultured emerald pearls." data-desc-hi="मीनाकारी और पोल्की से सजी 22 कैरेट सोने की अनूठी दुल्हन चोकर।">
+          <div class="product-badge">Bridal Signature</div>
+          <div class="product-img-wrap">
+            <img src="media/antique-choker.jpg" alt="Maharani Royal Kundan Choker Set" loading="lazy">
+            <button class="quick-view-btn" onclick="openProductModal(this)"><i class="fa-solid fa-eye"></i> Quick View</button>
+          </div>
+          <div class="product-details">
+            <span class="product-purity"><i class="fa-solid fa-stamp"></i> 22KT Gold (916 Hallmarked)</span>
+            <h4 class="product-title" data-i18n="p1Title">Maharani Kundan Choker Set</h4>
+            <p class="product-desc" data-i18n="p1Desc">Intricate floral bridal necklace accompanied by royal dangling jhumkas.</p>
+            <div class="product-action-row">
+              <button class="btn-royal btn-sm" onclick="inquireProduct('Maharani Kundan Choker Set', '22KT Gold')">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="inquirePrice">Inquire Price</span>
+              </button>
+              <button class="btn-outline-gold btn-sm" onclick="openProductModal(this)">
+                <i class="fa-solid fa-info-circle"></i> <span data-i18n="details">Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="gold" data-purity="22KT BIS Hallmarked" data-title-en="Heritage Kasu Temple Gold Haar" data-title-hi="हेरिटेज कासु टेम्पल गोल्ड हार" data-img="media/temple-jewelry.jpg" data-desc-en="Auspicious Goddess Lakshmi motifs embossed on 22K yellow gold with antique matte finishing." data-desc-hi="लक्ष्मी जी के नक्काशीदार रूप से सजा पारम्परिक 22 कैरेट टेम्पल हार।">
+          <div class="product-badge">Best Seller</div>
+          <div class="product-img-wrap">
+            <img src="media/temple-jewelry.jpg" alt="Heritage Temple Gold Haar" loading="lazy">
+            <button class="quick-view-btn" onclick="openProductModal(this)"><i class="fa-solid fa-eye"></i> Quick View</button>
+          </div>
+          <div class="product-details">
+            <span class="product-purity"><i class="fa-solid fa-stamp"></i> 22KT Gold (916)</span>
+            <h4 class="product-title" data-i18n="p2Title">Heritage Kasu Temple Haar</h4>
+            <p class="product-desc" data-i18n="p2Desc">Classic temple craftsmanship celebrating auspicious heritage.</p>
+            <div class="product-action-row">
+              <button class="btn-royal btn-sm" onclick="inquireProduct('Heritage Kasu Temple Haar', '22KT Gold')">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="inquirePrice">Inquire Price</span>
+              </button>
+              <button class="btn-outline-gold btn-sm" onclick="openProductModal(this)">
+                <i class="fa-solid fa-info-circle"></i> <span data-i18n="details">Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="diamond" data-purity="18KT Gold + VVS-EF Diamond" data-title-en="Eternal Solitaire Diamond Ring" data-title-hi="इटरनल सॉलिटेयर डायमंड रिंग" data-img="media/diamond-ring.jpg" data-desc-en="Brilliant round cut lab-certified solitaire diamond nestled in 18KT rose/white gold band." data-desc-hi="18 कैरेट हॉलमार्क सोने में जड़ा प्रमाणित वीवीएस-ईएफ सॉलिटेयर हीरा।">
+          <div class="product-badge">Certified Solitaire</div>
+          <div class="product-img-wrap">
+            <img src="media/diamond-ring.jpg" alt="Eternal Solitaire Diamond Ring" loading="lazy">
+            <button class="quick-view-btn" onclick="openProductModal(this)"><i class="fa-solid fa-eye"></i> Quick View</button>
+          </div>
+          <div class="product-details">
+            <span class="product-purity"><i class="fa-solid fa-gem"></i> 18KT (750) + Certified Diamond</span>
+            <h4 class="product-title" data-i18n="p3Title">Eternal Solitaire Ring</h4>
+            <p class="product-desc" data-i18n="p3Desc">Timeless engagement band with unmatched fire and optical clarity.</p>
+            <div class="product-action-row">
+              <button class="btn-royal btn-sm" onclick="inquireProduct('Eternal Solitaire Ring', 'Diamond/18K')">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="inquirePrice">Inquire Price</span>
+              </button>
+              <button class="btn-outline-gold btn-sm" onclick="openProductModal(this)">
+                <i class="fa-solid fa-info-circle"></i> <span data-i18n="details">Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="gold" data-purity="22KT BIS Hallmarked" data-title-en="Royal Filigree Gold Kadas (Pair)" data-title-hi="रॉयल फिलीग्री सोने के कड़े" data-img="media/gold-bangles.jpg" data-desc-en="Traditional handcrafted screw-locking gold bangles with delicate micro-filigree detailing." data-desc-hi="22 कैरेट शुद्ध सोने में हस्तनिर्मित पारंपरिक कंगन और कड़े।">
+          <div class="product-badge">Handcrafted</div>
+          <div class="product-img-wrap">
+            <img src="media/gold-bangles.jpg" alt="Royal Filigree Gold Kadas" loading="lazy">
+            <button class="quick-view-btn" onclick="openProductModal(this)"><i class="fa-solid fa-eye"></i> Quick View</button>
+          </div>
+          <div class="product-details">
+            <span class="product-purity"><i class="fa-solid fa-stamp"></i> 22KT Gold (916)</span>
+            <h4 class="product-title" data-i18n="p4Title">Royal Filigree Gold Kadas</h4>
+            <p class="product-desc" data-i18n="p4Desc">Durable daily and festive wear with secure locking mechanisms.</p>
+            <div class="product-action-row">
+              <button class="btn-royal btn-sm" onclick="inquireProduct('Royal Filigree Gold Kadas', '22KT Gold')">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="inquirePrice">Inquire Price</span>
+              </button>
+              <button class="btn-outline-gold btn-sm" onclick="openProductModal(this)">
+                <i class="fa-solid fa-info-circle"></i> <span data-i18n="details">Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" data-category="gold" data-purity="22KT BIS Hallmarked" data-title-en="Regal Nizam Gold Jhumkas" data-title-hi="रीगल निज़ाम सोने के झुमके" data-img="media/earrings-jhumka.jpg" data-desc-en="Three-tier dangling gold jhumkas with pearl drop accents, ideal for weddings and receptions." data-desc-hi="तीन परतों वाले भारी सोने के झुमके, शादियों और त्यौहारों के लिए।">
+          <div class="product-badge">Festive Trend</div>
+          <div class="product-img-wrap">
+            <img src="media/earrings-jhumka.jpg" alt="Regal Nizam Gold Jhumkas" loading="lazy">
+            <button class="quick-view-btn" onclick="openProductModal(this)"><i class="fa-solid fa-eye"></i> Quick View</button>
+          </div>
+          <div class="product-details">
+            <span class="product-purity"><i class="fa-solid fa-stamp"></i> 22KT Gold (916)</span>
+            <h4 class="product-title" data-i18n="p5Title">Regal Nizam Gold Jhumkas</h4>
+            <p class="product-desc" data-i18n="p5Desc">Classic tiered silhouette reflecting royal Central Indian grace.</p>
+            <div class="product-action-row">
+              <button class="btn-royal btn-sm" onclick="inquireProduct('Regal Nizam Gold Jhumkas', '22KT Gold')">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="inquirePrice">Inquire Price</span>
+              </button>
+              <button class="btn-outline-gold btn-sm" onclick="openProductModal(this)">
+                <i class="fa-solid fa-info-circle"></i> <span data-i18n="details">Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" data-category="gemstones" data-purity="100% Natural Lab Tested" data-title-en="Astrological Natural Burmese Ruby (Manik)" data-title-hi="प्राकृतिक बर्मा माणिक्य (रूबी)" data-img="media/gemstones-rubies.jpg" data-desc-en="Unheated, eye-clean Pigeon Blood Burmese Ruby certified with gemstone test certificate." data-desc-hi="ज्योतिषीय उपयोग हेतु अप्रसंस्कृत प्राकृतिक माणिक्य (लैब प्रमाणित)।">
+          <div class="product-badge">Jyotish Ratna</div>
+          <div class="product-img-wrap">
+            <img src="media/gemstones-rubies.jpg" alt="Astrological Natural Burmese Ruby" loading="lazy">
+            <button class="quick-view-btn" onclick="openProductModal(this)"><i class="fa-solid fa-eye"></i> Quick View</button>
+          </div>
+          <div class="product-details">
+            <span class="product-purity"><i class="fa-solid fa-certificate"></i> Certified Natural Gem</span>
+            <h4 class="product-title" data-i18n="p6Title">Natural Astrological Ruby (Manik)</h4>
+            <p class="product-desc" data-i18n="p6Desc">Handpicked for Surya astrological strength and vitality.</p>
+            <div class="product-action-row">
+              <button class="btn-royal btn-sm" onclick="inquireProduct('Natural Astrological Ruby', 'Gemstone')">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="inquirePrice">Inquire Price</span>
+              </button>
+              <button class="btn-outline-gold btn-sm" onclick="openProductModal(this)">
+                <i class="fa-solid fa-info-circle"></i> <span data-i18n="details">Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card" data-category="silver" data-purity="999 Pure Silver" data-title-en="Divine Lakshmi-Ganesh Pooja Thali Set" data-title-hi="लक्ष्मी-गणेश शुद्ध चांदी पूजा थाली" data-img="media/silver-pooja.jpg" data-desc-en="Hallmarked 99.9% pure silver pooja plate with diya, agarbatti stand, and bell." data-desc-hi="99.9% शुद्ध चांदी से निर्मित नक्काशीदार पूजा थाली एवं कलश।">
+          <div class="product-badge">Purity 999</div>
+          <div class="product-img-wrap">
+            <img src="media/silver-pooja.jpg" alt="Divine Silver Pooja Thali Set" loading="lazy">
+            <button class="quick-view-btn" onclick="openProductModal(this)"><i class="fa-solid fa-eye"></i> Quick View</button>
+          </div>
+          <div class="product-details">
+            <span class="product-purity"><i class="fa-solid fa-sparkles"></i> 999 Purity Silver</span>
+            <h4 class="product-title" data-i18n="p7Title">Silver Pooja Thali Set</h4>
+            <p class="product-desc" data-i18n="p7Desc">Auspicious gift for housewarmings, Diwali, and festive ceremonies.</p>
+            <div class="product-action-row">
+              <button class="btn-royal btn-sm" onclick="inquireProduct('Silver Pooja Thali Set', 'Pure Silver')">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="inquirePrice">Inquire Price</span>
+              </button>
+              <button class="btn-outline-gold btn-sm" onclick="openProductModal(this)">
+                <i class="fa-solid fa-info-circle"></i> <span data-i18n="details">Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card" data-category="bridal" data-purity="22KT BIS Hallmarked" data-title-en="Polki Jadau Royal Rani Haar" data-title-hi="पोल्की जड़ाऊ रॉयल रानी हार" data-img="media/polki-necklace.jpg" data-desc-en="Grand multi-string bridal haar featuring uncut diamonds and South Sea pearls." data-desc-hi="राजसी लुक देने वाला पारंपरिक जड़ाऊ पोल्की रानी हार।">
+          <div class="product-badge">Bridal Heritage</div>
+          <div class="product-img-wrap">
+            <img src="media/polki-necklace.jpg" alt="Polki Jadau Royal Rani Haar" loading="lazy">
+            <button class="quick-view-btn" onclick="openProductModal(this)"><i class="fa-solid fa-eye"></i> Quick View</button>
+          </div>
+          <div class="product-details">
+            <span class="product-purity"><i class="fa-solid fa-stamp"></i> 22KT Gold (916)</span>
+            <h4 class="product-title" data-i18n="p8Title">Polki Jadau Royal Rani Haar</h4>
+            <p class="product-desc" data-i18n="p8Desc">Regal statement piece crafted for unforgettable wedding ceremonies.</p>
+            <div class="product-action-row">
+              <button class="btn-royal btn-sm" onclick="inquireProduct('Polki Jadau Royal Rani Haar', '22KT Gold')">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="inquirePrice">Inquire Price</span>
+              </button>
+              <button class="btn-outline-gold btn-sm" onclick="openProductModal(this)">
+                <i class="fa-solid fa-info-circle"></i> <span data-i18n="details">Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 9: 24K Pure Gold Coins & Bars -->
+        <div class="product-card" data-category="gold" data-purity="24KT (999) Pure Gold" data-title-en="24K Lakshmi-Ganesh Pure Gold Coin (10g)" data-title-hi="24 कैरेट लक्ष्मी-गणेश शुद्ध स्वर्ण सिक्का (10 ग्राम)" data-img="media/gold-coins.jpg" data-desc-en="Government hallmarked 99.9% pure 24K investment gold bullion coins with tamper-proof certification packaging." data-desc-hi="99.9% शुद्ध 24 कैरेट सरकार प्रमाणित स्वर्ण सिक्का, धनतेरस, दिवाली एवं निवेश हेतु सर्वोत्तम।">
+          <div class="product-badge">999 Pure Bullion</div>
+          <div class="product-img-wrap">
+            <img src="media/gold-coins.jpg" alt="24K Pure Gold Coins Raja Jewellers Jabalpur" loading="lazy">
+            <button class="quick-view-btn" onclick="openProductModal(this)"><i class="fa-solid fa-eye"></i> Quick View</button>
+          </div>
+          <div class="product-details">
+            <span class="product-purity"><i class="fa-solid fa-stamp"></i> 24KT Gold (999 Purity)</span>
+            <h4 class="product-title" data-i18n="p9Title">24K Lakshmi-Ganesh Gold Coin</h4>
+            <p class="product-desc" data-i18n="p9Desc">Certified tamper-proof pure investment coins in 1g, 5g, 10g, and 20g weights.</p>
+            <div class="product-action-row">
+              <button class="btn-royal btn-sm" onclick="inquireProduct('24K Lakshmi-Ganesh Gold Coin', '24KT 999 Gold')">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="inquirePrice">Inquire Price</span>
+              </button>
+              <button class="btn-outline-gold btn-sm" onclick="openProductModal(this)">
+                <i class="fa-solid fa-info-circle"></i> <span data-i18n="details">Details</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LIVE GOLD RATE CALCULATOR & WHATSAPP SUBSCRIBER ================= -->
+  <section class="section gold-rates-section" id="gold-rates">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading" data-i18n="ratesSub">Transparency First</span>
+        <h2 class="section-title" data-i18n="ratesTitle">Live Gold & Silver Rate Calculator</h2>
+        <div class="gold-divider"><span>♦</span></div>
+        <p class="section-desc" data-i18n="ratesDesc">Check estimated jewellery costs before you visit our Gwarighat store. Get daily market updates directly on WhatsApp.</p>
+      </div>
+
+      <div class="rates-calculator-wrapper">
+        <!-- Interactive Weight Calculator -->
+        <div class="calc-card">
+          <div class="calc-header">
+            <h3><i class="fa-solid fa-scale-unbalanced-flip"></i> <span data-i18n="calcTitle">Instant Gold Value Estimator</span></h3>
+            <span class="calc-badge" data-i18n="jabalpurMarket">Jabalpur Market</span>
+          </div>
+
+          <div class="calc-body">
+            <div class="form-group">
+              <label for="calcPurity" data-i18n="selectPurity">Select Metal Purity:</label>
+              <select id="calcPurity" class="form-control" onchange="calculateGoldPrice()">
+                <option value="22" selected>22 Karat (916 Hallmarked Gold)</option>
+                <option value="24">24 Karat (999 Pure Bullion Gold)</option>
+                <option value="18">18 Karat (750 Diamond Jewellery Gold)</option>
+                <option value="silver">Fine Silver (999 Purity)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="calcWeight" data-i18n="enterWeight">Enter Weight (Grams):</label>
+              <div class="weight-input-row">
+                <input type="number" id="calcWeight" class="form-control" value="10" min="0.5" step="0.5" oninput="calculateGoldPrice()">
+                <div class="weight-presets">
+                  <button type="button" class="preset-btn" onclick="setPresetWeight(1)">1g</button>
+                  <button type="button" class="preset-btn" onclick="setPresetWeight(5)">5g</button>
+                  <button type="button" class="preset-btn active" onclick="setPresetWeight(10)">10g</button>
+                  <button type="button" class="preset-btn" onclick="setPresetWeight(20)">20g</button>
+                  <button type="button" class="preset-btn" onclick="setPresetWeight(50)">50g</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-result-box">
+              <div class="result-row">
+                <span data-i18n="metalRatePerGram">Base Metal Rate:</span>
+                <span class="result-value" id="resRatePerGram">₹7,192 / gram</span>
+              </div>
+              <div class="result-row">
+                <span data-i18n="estimatedMetalValue">Estimated Metal Value:</span>
+                <span class="result-total" id="resTotalValue">₹71,920</span>
+              </div>
+              <p class="calc-note" data-i18n="calcDisclaimer">*Note: Does not include making charges and 3% GST. Making charges at Raja Jewellers are among the most economical in Jabalpur.</p>
+            </div>
+
+            <button class="btn-royal btn-block" onclick="inquireCalculatedEstimate()">
+              <i class="fa-brands fa-whatsapp"></i> <span data-i18n="inquireThisEstimate">Lock Rate on WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- WhatsApp Daily Rate Alert Subscription (Pushes to Google Sheets) -->
+        <div class="rate-subscribe-card">
+          <div class="subscribe-header">
+            <span class="sub-icon"><i class="fa-brands fa-whatsapp"></i></span>
+            <div>
+              <h3 data-i18n="subTitle">Daily Gold Rate Alerts</h3>
+              <p data-i18n="subDesc">Wake up to verified morning gold and silver market rates on your WhatsApp.</p>
+            </div>
+          </div>
+
+          <form id="goldRateAlertForm" class="subscribe-form" onsubmit="handleFormSubmit(event, 'Daily Gold Rate Alert')">
+            <input type="hidden" name="formType" value="Daily Gold Rate Alert">
+            
+            <div class="form-group">
+              <label for="subName" data-i18n="labelFullName">Your Name</label>
+              <input type="text" id="subName" name="name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subPhone" data-i18n="labelPhone">WhatsApp Mobile Number</label>
+              <input type="tel" id="subPhone" name="phone" class="form-control" placeholder="e.g. 98260XXXXX" required pattern="[0-9]{10}">
+            </div>
+
+            <div class="form-group">
+              <label for="subCity" data-i18n="labelCity">City / Area</label>
+              <input type="text" id="subCity" name="city" class="form-control" value="Jabalpur" placeholder="Jabalpur">
+            </div>
+
+            <button type="submit" class="btn-royal btn-block submit-btn">
+              <span class="btn-text"><i class="fa-solid fa-bell"></i> <span data-i18n="btnSubscribe">Subscribe for Free</span></span>
+              <span class="btn-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i> Submitting...</span>
+            </button>
+
+            <div class="form-feedback" id="feedback-goldRateAlertForm"></div>
+
+            <div class="sheets-sync-tag">
+              <i class="fa-solid fa-file-excel"></i> <span data-i18n="sheetsNotice">Auto-saved to Google Sheets & Excel</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CUSTOM JEWELLERY & KARIGARI WORK ================= -->
+  <section class="section custom-section" id="custom-jewels">
+    <div class="container">
+      <div class="custom-card-wrapper">
+        <div class="custom-image-side">
+          <img src="media/craftsman-karigar.jpg" alt="Master Karigar Handcrafting Gold Jewelry">
+          <div class="custom-image-overlay">
+            <div class="karigar-quote">
+              <i class="fa-solid fa-quote-left"></i>
+              <p data-i18n="karigarQuote">"Every piece of custom jewelry carries the emotions of generations. We craft your dreams with traditional perfection and modern laser precision."</p>
+              <span>— Raja Jewellers Goldsmith Studio, Gwarighat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="custom-form-side">
+          <div class="section-header text-left">
+            <span class="sub-heading" data-i18n="customSub">Bespoke Karigari Studio</span>
+            <h2 class="section-title" data-i18n="customTitle">Custom Jewellery & Job Work</h2>
+            <div class="gold-divider left"><span>♦</span></div>
+            <p class="section-desc" data-i18n="customDesc">Have an Instagram or Pinterest design in mind? Or want old gold remade into modern bridal ornaments? Share your idea below.</p>
+          </div>
+
+          <form id="customJewelForm" class="lead-form" onsubmit="handleFormSubmit(event, 'Custom Jewellery Request')">
+            <input type="hidden" name="formType" value="Custom Jewellery Request">
+
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label for="cName" data-i18n="labelFullName">Full Name *</label>
+                <input type="text" id="cName" name="name" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="form-group col-6">
+                <label for="cPhone" data-i18n="labelPhone">Phone / WhatsApp *</label>
+                <input type="tel" id="cPhone" name="phone" class="form-control" placeholder="10-digit number" required pattern="[0-9]{10}">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label for="cCategory" data-i18n="labelCategory">Item Category *</label>
+                <select id="cCategory" name="category" class="form-control" required>
+                  <option value="Bridal Necklace Set">Bridal Necklace Set</option>
+                  <option value="Gold Bangles / Kadas">Gold Bangles / Kadas</option>
+                  <option value="Engagement / Solitaire Ring">Engagement / Solitaire Ring</option>
+                  <option value="Astrological Gemstone Ring/Pendant">Astrological Gemstone Ring/Pendant</option>
+                  <option value="Mangalsutra Design">Mangalsutra Design</option>
+                  <option value="Old Gold Melting & Remaking">Old Gold Melting & Remaking</option>
+                  <option value="Other Custom Job Work">Other Custom Job Work</option>
+                </select>
+              </div>
+
+              <div class="form-group col-6">
+                <label for="cPurity" data-i18n="labelPurity">Preferred Metal</label>
+                <select id="cPurity" name="purity" class="form-control">
+                  <option value="22K 916 Hallmark Gold">22K 916 Hallmark Gold</option>
+                  <option value="18K 750 Gold">18K 750 Gold</option>
+                  <option value="Fine Silver 925/999">Fine Silver 925/999</option>
+                  <option value="Gemstone with Panchdhatu">Gemstone with Panchdhatu</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label for="cBudget" data-i18n="labelBudget">Approx Budget (₹)</label>
+                <select id="cBudget" name="budget" class="form-control">
+                  <option value="Under ₹25,000">Under ₹25,000</option>
+                  <option value="₹25,000 - ₹50,000">₹25,000 - ₹50,000</option>
+                  <option value="₹50,000 - ₹1,00,000">₹50,000 - ₹1,00,000</option>
+                  <option value="₹1,00,000 - ₹3,00,000">₹1,00,000 - ₹3,00,000</option>
+                  <option value="₹3,00,000+ (Bridal Trousseau)">₹3,00,000+ (Bridal Trousseau)</option>
+                </select>
+              </div>
+
+              <div class="form-group col-6">
+                <label for="cTargetDate" data-i18n="labelNeededBy">Needed By Date</label>
+                <input type="date" id="cTargetDate" name="date" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cNotes" data-i18n="labelCustomNotes">Design Details / Specifications</label>
+              <textarea id="cNotes" name="notes" rows="3" class="form-control" placeholder="Describe the design, weight preference, gemstone preference or references..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-royal btn-block submit-btn">
+              <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="btnSubmitCustom">Submit Custom Request (Pushes to Sheet)</span></span>
+              <span class="btn-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i> Processing...</span>
+            </button>
+
+            <div class="form-feedback" id="feedback-customJewelForm"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BOOK VIP SHOWROOM APPOINTMENT ================= -->
+  <section class="section appointment-section" id="vip-appointment">
+    <div class="container">
+      <div class="appointment-card">
+        <div class="appointment-info">
+          <div class="vip-badge">
+            <i class="fa-solid fa-crown"></i> <span data-i18n="vipExperience">Personalized VIP Experience</span>
+          </div>
+          <h2 class="section-title text-left" data-i18n="bookVisitTitle">Book a Private Showroom Consultation</h2>
+          <p data-i18n="bookVisitDesc">Enjoy an unhurried, private jewelry viewing session with our senior ornaments specialist. Try on bridal sets, test astrological gemstones, and inspect 916 hallmarks up close.</p>
+
+          <ul class="vip-benefits-list">
+            <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="benefit1">Dedicated jewelry stylist for wedding planning</span></li>
+            <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="benefit2">Free purity testing of your old family gold</span></li>
+            <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="benefit3">Astrological gemstone chart recommendations</span></li>
+            <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="benefit4">Reserved parking & comfortable lounge hospitality</span></li>
+          </ul>
+
+          <div class="showroom-address-snippet">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Raja Jewellers Showroom</strong>
+              <p>Near Mayur Kala Mandir, Old P.P. Colony, Gwarighat, Jabalpur - 482008</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="appointment-form-wrapper">
+          <form id="appointmentForm" class="appointment-form" onsubmit="handleFormSubmit(event, 'VIP Showroom Appointment')">
+            <input type="hidden" name="formType" value="VIP Showroom Appointment">
+
+            <h3 data-i18n="scheduleVisit">Schedule Your Visit</h3>
+
+            <div class="form-group">
+              <label for="vName" data-i18n="labelFullName">Your Name *</label>
+              <input type="text" id="vName" name="name" class="form-control" placeholder="e.g. Priya Patel" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label for="vPhone" data-i18n="labelPhone">Mobile Number *</label>
+                <input type="tel" id="vPhone" name="phone" class="form-control" placeholder="10-digit number" required pattern="[0-9]{10}">
+              </div>
+              <div class="form-group col-6">
+                <label for="vEmail" data-i18n="labelEmail">Email Address</label>
+                <input type="email" id="vEmail" name="email" class="form-control" placeholder="name@email.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-6">
+                <label for="vDate" data-i18n="labelDate">Preferred Date *</label>
+                <input type="date" id="vDate" name="date" class="form-control" required>
+              </div>
+              <div class="form-group col-6">
+                <label for="vTimeSlot" data-i18n="labelSlot">Time Slot *</label>
+                <select id="vTimeSlot" name="timeSlot" class="form-control" required>
+                  <option value="11:30 AM - 01:30 PM">Morning (11:30 AM - 1:30 PM)</option>
+                  <option value="02:00 PM - 04:30 PM">Afternoon (2:00 PM - 4:30 PM)</option>
+                  <option value="05:00 PM - 07:30 PM">Evening (5:00 PM - 7:30 PM)</option>
+                  <option value="07:30 PM - 09:00 PM">Late Evening (7:30 PM - 9:00 PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="vService" data-i18n="labelInterest">Jewellery Interest *</label>
+              <select id="vService" name="service" class="form-control">
+                <option value="Bridal Wedding Trousseau">Bridal Wedding Trousseau</option>
+                <option value="Daily Wear 22K Gold">Daily Wear 22K Gold</option>
+                <option value="Diamond Solitaires & Rings">Diamond Solitaires & Rings</option>
+                <option value="Natural Astrological Gemstones">Natural Astrological Gemstones</option>
+                <option value="Silver Utensils & Pooja Articles">Silver Utensils & Pooja Articles</option>
+                <option value="Old Gold Exchange & Valuation">Old Gold Exchange & Valuation</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="vMessage" data-i18n="labelSpecialNotes">Special Requests (Optional)</label>
+              <textarea id="vMessage" name="message" rows="2" class="form-control" placeholder="Any specific design or family requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-royal btn-block submit-btn">
+              <span class="btn-text"><i class="fa-solid fa-calendar-check"></i> <span data-i18n="btnConfirmAppointment">Confirm Appointment (Save to Google Sheets)</span></span>
+              <span class="btn-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i> Saving Booking...</span>
+            </button>
+
+            <div class="form-feedback" id="feedback-appointmentForm"></div>
+
+            <div class="sheets-sync-tag">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <span>Direct Google Apps Script & Excel sync enabled</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AUTHENTIC GOOGLE REVIEWS & TESTIMONIALS ================= -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading" data-i18n="reviewsSub">Trusted Across Jabalpur</span>
+        <h2 class="section-title" data-i18n="reviewsTitle">Customer Love & Ratings</h2>
+        <div class="gold-divider"><span>♦</span></div>
+        <div class="google-rating-pill">
+          <i class="fa-brands fa-google google-icon"></i>
+          <span class="rating-num">4.8</span>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <span class="review-count">(280+ Verified Google Reviews)</span>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text" data-i18n="r1Text">"Purchased my sister's complete wedding trousseau from Raja Jewellers Gwarighat. Purity was 100% verified with BIS hallmark machine in front of us, and their making charges were significantly more reasonable than big chain stores in Jabalpur."</p>
+          <div class="reviewer-info">
+            <img src="media/review-1.jpg" alt="Ananya Sahu Jabalpur" class="reviewer-avatar">
+            <div>
+              <h4 class="reviewer-name">Ananya Sahu</h4>
+              <span class="reviewer-location"><i class="fa-solid fa-location-dot"></i> Gwarighat Road, Jabalpur</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text" data-i18n="r2Text">"Got a natural Yellow Sapphire (Pukhraj) gemstone from Raja Gems & Jewellers. They gave a government laboratory certified certificate and set it in a gold ring on an auspicious Thursday. Very honest and polite owner."</p>
+          <div class="reviewer-info">
+            <img src="media/review-2.jpg" alt="Rajesh K. Dubey Jabalpur" class="reviewer-avatar">
+            <div>
+              <h4 class="reviewer-name">Rajesh K. Dubey</h4>
+              <span class="reviewer-location"><i class="fa-solid fa-location-dot"></i> Civil Lines / Polipather</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text" data-i18n="r3Text">"I wanted an Instagram designer mangalsutra created in 22K gold. Their karigars did a phenomenal job matching the exact design within 6 days. Best jewelry showroom in Gwarighat Jabalpur!"</p>
+          <div class="reviewer-info">
+            <img src="media/review-3.jpg" alt="Pooja Agrawal Jabalpur" class="reviewer-avatar">
+            <div>
+              <h4 class="reviewer-name">Pooja Agrawal</h4>
+              <span class="reviewer-location"><i class="fa-solid fa-location-dot"></i> Gorakhpur, Jabalpur</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHOWROOM LOCATION & GOOGLE MAPS EMBED ================= -->
+  <section class="section location-section" id="location">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="sub-heading" data-i18n="locationSub">Visit Our Showroom</span>
+        <h2 class="section-title" data-i18n="locationTitle">Location & Store Timings</h2>
+        <div class="gold-divider"><span>♦</span></div>
+        <p class="section-desc" data-i18n="locationDesc">Conveniently located in Gwarighat on the main road near Mayur Kala Mandir. Ample parking available.</p>
+      </div>
+
+      <div class="location-container">
+        <!-- Store Information Card -->
+        <div class="location-details-card">
+          <!-- Showroom Ambiance Photo Banner -->
+          <div class="showroom-photo-banner">
+            <img src="media/showroom-interior.jpg" alt="Raja Jewellers Gwarighat Showroom Interior" class="showroom-preview-img">
+            <div class="showroom-photo-tag"><i class="fa-solid fa-store"></i> Gwarighat Luxury Showroom</div>
+          </div>
+
+          <div class="store-badge">
+            <i class="fa-solid fa-gem"></i> Raja Jewellers & Gems • Estd. 2008
+          </div>
+
+          <div class="location-info-block">
+            <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div class="info-text">
+              <strong data-i18n="addressLabel">Showroom Address:</strong>
+              <p>Near Mayur Kala Mandir, Old P.P. Colony, Gwarighat Main Road, Jabalpur, Madhya Pradesh - 482008</p>
+              <span class="landmark-tag"><i class="fa-solid fa-compass"></i> Near Polipather & South Avenue Mall area</span>
+            </div>
+          </div>
+
+          <div class="location-info-block">
+            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="info-text">
+              <strong data-i18n="timingsLabel">Business Hours:</strong>
+              <p><strong>Monday - Sunday:</strong> 11:00 AM – 9:00 PM</p>
+              <span class="open-status"><i class="fa-solid fa-circle"></i> Open 7 Days A Week</span>
+            </div>
+          </div>
+
+          <div class="location-info-block">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="info-text">
+              <strong data-i18n="contactLabel">Phone & WhatsApp:</strong>
+              <p>
+                <a href="tel:+919993918013" class="link-phone">+91 99939 18013</a> / 
+                <a href="tel:+918377911745" class="link-phone">+91 83779 11745</a>
+              </p>
+              <p class="email-sub"><i class="fa-solid fa-envelope"></i> rajajewellers.gwarighat@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="location-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Raja+Jewellers+Gwarighat+Jabalpur" target="_blank" rel="noopener" class="btn-royal btn-sm">
+              <i class="fa-solid fa-diamond-turn-right"></i> <span data-i18n="btnDirections">Get Directions</span>
+            </a>
+            <a href="https://wa.me/919993918013?text=Namaste%20Raja%20Jewellers,%20I%20am%20visiting%20the%20store%20today." target="_blank" rel="noopener" class="btn-whatsapp-pill">
+              <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btnWhatsAppStore">Message Showroom</span>
+            </a>
+          </div>
+
+          <!-- Social Media Handles -->
+          <div class="social-channels">
+            <span data-i18n="followUs">Follow Our Designs:</span>
+            <div class="social-icons">
+              <a href="https://instagram.com/rajajewellers_jabalpur" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://facebook.com/RajaJewellersGwarighat" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://youtube.com/@RajaJewellersJabalpur" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.google.com/search?q=raja+jewellers+jabalpur+gwarighat" target="_blank" rel="noopener" aria-label="Google Listing"><i class="fa-brands fa-google"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed Container -->
+        <div class="map-embed-wrapper">
+          <div class="map-header-bar">
+            <span><i class="fa-solid fa-map-pin"></i> Google Maps: Raja Jewellers Gwarighat, Jabalpur</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Raja+Jewellers+Gwarighat+Jabalpur" target="_blank" rel="noopener" class="map-fullscreen-btn"><i class="fa-solid fa-expand"></i> View Larger</a>
+          </div>
+          <!-- Responsive Google Map Iframe pointing to Gwarighat Main Road Jabalpur -->
+          <iframe 
+            class="google-map-iframe" 
+            title="Raja Jewellers Jabalpur Google Map Location" 
+            src="https://maps.google.com/maps?q=Raja%20Jewellers,%20Gwarighat%20Road,%20Jabalpur,%20Madhya%20Pradesh%20482008&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= GOOGLE APPS SCRIPT SETTINGS MODAL / DEVELOPER HELPER ================= -->
+  <div class="settings-strip">
+    <div class="container settings-inner">
+      <div class="settings-desc">
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+        <span><strong>Google Apps Script / Excel Endpoint:</strong> <code id="activeEndpointLabel">Ready (Configurable)</code></span>
+      </div>
+      <button class="btn-outline-gold btn-xs" onclick="openEndpointModal()">
+        <i class="fa-solid fa-gear"></i> Configure Sheets URL
+      </button>
+    </div>
+  </div>
+
+  <!-- Endpoint Modal -->
+  <div class="modal-backdrop" id="endpointModal" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-table-cells"></i> Google Sheets & Excel Lead Webhook</h3>
+        <button class="modal-close-btn" onclick="closeEndpointModal()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <p>This website submits all customer leads (VIP visits, custom designs, WhatsApp rate alerts) directly into your Google Spreadsheet using Google Apps Script.</p>
+        <div class="form-group">
+          <label for="appsScriptUrlInput"><strong>Your Apps Script Web App URL:</strong></label>
+          <input type="url" id="appsScriptUrlInput" class="form-control" placeholder="https://script.google.com/macros/s/AKfycb.../exec">
+          <small class="text-muted">Need to create your script? See the step-by-step instructions in <a href="file:///c:/S/Projects%20and%20researches/Website/rajajweller/SETUP_GOOGLE_SHEETS.md" target="_blank">SETUP_GOOGLE_SHEETS.md</a>.</small>
+        </div>
+        <div class="modal-actions">
+          <button class="btn-royal btn-sm" onclick="saveEndpointUrl()"><i class="fa-solid fa-check"></i> Save & Test URL</button>
+          <button class="btn-outline-gold btn-sm" onclick="testEndpoint()"><i class="fa-solid fa-bolt"></i> Send Test Ping</button>
+        </div>
+        <div id="endpointStatusMsg" class="mt-2"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Quick View Modal -->
+  <div class="modal-backdrop" id="productModal" style="display: none;">
+    <div class="modal-card product-modal-card">
+      <button class="modal-close-btn" onclick="closeProductModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="product-modal-grid">
+        <div class="product-modal-media">
+          <img id="modalProductImg" src="media/hero-bg.jpg" alt="Raja Jewellers Product">
+        </div>
+        <div class="product-modal-details">
+          <span class="product-modal-purity" id="modalProductPurity">22KT Gold 916</span>
+          <h3 id="modalProductTitle">Product Title</h3>
+          <p id="modalProductDesc">Detailed product description.</p>
+          
+          <div class="modal-spec-box">
+            <div><i class="fa-solid fa-award"></i> <strong>Hallmark:</strong> BIS HUID Stamped</div>
+            <div><i class="fa-solid fa-hand-holding-hand"></i> <strong>Buyback:</strong> 100% Lifetime Guarantee</div>
+            <div><i class="fa-solid fa-clock-rotate-left"></i> <strong>Availability:</strong> In-Showroom Gwarighat</div>
+          </div>
+
+          <div class="modal-action-row">
+            <button class="btn-royal" id="modalWhatsAppBtn">
+              <i class="fa-brands fa-whatsapp"></i> Inquire Price on WhatsApp
+            </button>
+            <a href="#vip-appointment" class="btn-outline-gold" onclick="closeProductModal()">
+              <i class="fa-solid fa-calendar"></i> Book In-Person View
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <!-- Col 1: Brand & Heritage -->
+      <div class="footer-col brand-col">
+        <img src="media/logo.svg" alt="Raja Jewellers Jabalpur" class="footer-logo">
+        <p data-i18n="footerBrandBio">Established in 2008, Raja Jewellers is Gwarighat Jabalpur's premier destination for certified 22KT hallmarked gold, diamond rings, natural gemstones, and bespoke bridal trousseaus.</p>
+        <div class="footer-badges">
+          <img src="media/bis-hallmark.svg" alt="BIS Hallmark" class="footer-badge-img">
+          <img src="media/certified-seal.svg" alt="Certified Natural Gemstones" class="footer-badge-img">
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading" data-i18n="footerNavTitle">Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="navHome">Home</span></a></li>
+          <li><a href="#collections"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="navCollections">Collections</span></a></li>
+          <li><a href="#gold-rates"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="navRates">Live Rates & Calc</span></a></li>
+          <li><a href="#custom-jewels"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="navCustom">Custom Karigari</span></a></li>
+          <li><a href="#vip-appointment"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="navAppointment">Book Visit</span></a></li>
+          <li><a href="#location"><i class="fa-solid fa-chevron-right"></i> <span data-i18n="navLocation">Location & Map</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Specialties -->
+      <div class="footer-col">
+        <h4 class="footer-heading" data-i18n="footerSpecTitle">Showroom Specialties</h4>
+        <ul class="footer-links">
+          <li><a href="#collections"><i class="fa-solid fa-gem"></i> 22KT Gold Bridal Haar</a></li>
+          <li><a href="#collections"><i class="fa-solid fa-gem"></i> Diamond Solitaire Rings</a></li>
+          <li><a href="#collections"><i class="fa-solid fa-gem"></i> Certified Jyotish Ratna</a></li>
+          <li><a href="#collections"><i class="fa-solid fa-gem"></i> 999 Pure Silver Pooja Utensils</a></li>
+          <li><a href="#collections"><i class="fa-solid fa-gem"></i> Old Gold Melting & Exchange</a></li>
+          <li><a href="#collections"><i class="fa-solid fa-gem"></i> Gold Coins & Bars (999)</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Store Contact -->
+      <div class="footer-col">
+        <h4 class="footer-heading" data-i18n="footerContactTitle">Store Information</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Near Mayur Kala Mandir, Old P.P. Colony, Gwarighat, Jabalpur (M.P.) - 482008</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span><a href="tel:+919993918013">+91 99939 18013</a> / <a href="tel:+918377911745">+91 83779 11745</a></span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>rajajewellers.gwarighat@gmail.com</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            <span>Monday - Sunday: 11:00 AM - 9:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Raja Jewellers (राजा ज्वेलर्स), Jabalpur. All Rights Reserved. 100% BIS Hallmarked Jewellery.</p>
+        <div class="footer-social-strip">
+          <a href="https://instagram.com/rajajewellers_jabalpur" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com/RajaJewellersGwarighat" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://youtube.com/@RajaJewellersJabalpur" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.google.com/search?q=raja+jewellers+jabalpur+gwarighat" target="_blank" rel="noopener"><i class="fa-brands fa-google"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MOBILE NATIVE BOTTOM NAVIGATION BAR ================= -->
+  <nav class="mobile-bottom-nav">
+    <a href="#home" class="bottom-nav-item active" id="bNavHome">
+      <i class="fa-solid fa-house"></i>
+      <span data-i18n="bNavHome">Home</span>
+    </a>
+    <a href="#collections" class="bottom-nav-item" id="bNavCatalog">
+      <i class="fa-solid fa-gem"></i>
+      <span data-i18n="bNavCatalog">Jewels</span>
+    </a>
+    <a href="#gold-rates" class="bottom-nav-item" id="bNavRates">
+      <i class="fa-solid fa-calculator"></i>
+      <span data-i18n="bNavRates">Rates</span>
+    </a>
+    <a href="#vip-appointment" class="bottom-nav-item highlight-item" id="bNavBook">
+      <div class="icon-bubble">
+        <i class="fa-solid fa-calendar-check"></i>
+      </div>
+      <span data-i18n="bNavBook">Visit</span>
+    </a>
+    <a href="https://wa.me/919993918013?text=Namaste%20Raja%20Jewellers,%20I%20am%20messaging%20from%20your%20website." target="_blank" rel="noopener" class="bottom-nav-item whatsapp-nav">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>Chat</span>
+    </a>
+    <a href="tel:+919993918013" class="bottom-nav-item call-nav">
+      <i class="fa-solid fa-phone"></i>
+      <span data-i18n="bNavCall">Call</span>
+    </a>
+  </nav>
+
+  <!-- ================= FLOATING ACTION SHORTCUTS (DESKTOP/MOBILE) ================= -->
+  <div class="floating-contact-stack">
+    <a href="https://wa.me/919993918013?text=Namaste%20Raja%20Jewellers,%20I%20would%20like%20to%20inquire%20about%20your%20jewellery%20collection." target="_blank" rel="noopener" class="float-btn float-whatsapp" aria-label="WhatsApp Us">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="float-tooltip">Chat with us</span>
+    </a>
+    <a href="tel:+919993918013" class="float-btn float-call" aria-label="Call Store">
+      <i class="fa-solid fa-phone"></i>
+      <span class="float-tooltip">Call Showroom</span>
+    </a>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
